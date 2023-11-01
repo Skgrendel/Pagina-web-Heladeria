@@ -865,7 +865,13 @@ a:focus {
   /* Establece bordes circulares */
   border-radius: 20%; /* Crea bordes circulares */
 }
-
+.nombres {
+  display: flex;
+  align-items: center;
+  color: #FF6B6B; /* Color rosado (ajusta el color según tu preferencia) */
+  margin-top: 5px; /* Agrega un pequeño margen superior (ajusta según tus necesidades) */
+  margin-bottom: 5px; /* Agrega un pequeño margen inferior (ajusta según tus necesidades) */
+}
 
 
 /*# sourceMappingURL=style.css.map */
