@@ -829,4 +829,43 @@ a:focus {
 .footer_section p a {
   color: inherit;
 }
+.agregar-carrito {
+
+  border: none;
+  border-radius: 15px; /* Ajusta el valor de la propiedad border-radius según tu preferencia */
+  background: linear-gradient(45deg, #FF6B6B, #FFC154); /* Cambia los colores de gradiente según tu preferencia */
+  color: #fff; /* Color del texto en el botón */
+  padding: 10px 20px; /* Ajusta el espaciado según tus necesidades */
+  cursor: pointer;
+  transition: background 0.3s ease; /* Transición de color de fondo suave al pasar el mouse */
+  margin-top: 10px; /* Agrega un margen superior de 10px (ajusta según tus necesidades) */
+  outline: none; /* Elimina el borde predeterminado */
+}
+
+.agregar-carrito:hover {
+  background: linear-gradient(45deg, #FFC154, #FF6B6B); /* Cambia los colores de gradiente al pasar el mouse */
+}
+
+.precio {
+  color: #FF6B6B; /* Color rosado (ajusta el color según tu preferencia) */
+  margin-top: 5px; /* Agrega un pequeño margen superior (ajusta según tus necesidades) */
+  margin-bottom: 5px; /* Agrega un pequeño margen inferior (ajusta según tus necesidades) */
+}
+.precios {
+  margin-top: 15px; /* Agrega un pequeño margen superior (ajusta según tus necesidades) */
+  font-size: 13px; /* Ajusta el tamaño de la fuente según tus necesidades */
+  display: inline-block; /* Para permitir que el fondo se ajuste al tamaño del texto */
+  background-image: linear-gradient(45deg, #FF6B6B, #FFC154); /* Cambia los colores de gradiente según tu preferencia */
+  color: white; /* Hace que el texto sea blanco */
+  padding: 5px 10px; /* Ajusta el relleno según tus necesidades */
+
+  /* Utiliza clip-path para dar forma al fondo */
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+
+  /* Establece bordes circulares */
+  border-radius: 20%; /* Crea bordes circulares */
+}
+
+
+
 /*# sourceMappingURL=style.css.map */
