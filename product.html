@@ -40,9 +40,11 @@
     />
     <!-- font awesome style -->
     <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style2.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
   </head>
@@ -86,7 +88,7 @@
                   <a class="nav-link" href="contact.html">Contactanos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" id="compras">
+                  <a class="nav-link" href="carrito.html" id="compras">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       height="0.875em"
@@ -130,94 +132,92 @@
             Glacialmente Delicioso!"
           </p>
         </div>
-        <div class="product_container">
-          <div class="carousel-wrap">
-            <div class="">
-              <div class="product_owl-carousel owl-carousel">
-                <div class="item">
-                  <div class="item">
-                    <div class="box">
-                      <div><p class="nombres">Helado de limon y Caramelo</p> </div>
-                      <div class="img-box">
-                        <img src="images/i1.png" alt="" />
-                      </div>
-                      <p class="precio">$17</p> 
-                      <button
-                        class="agregar-carrito"
-                        data-producto="Producto 2"
-                        data-precio="17"
-                      >
-                       Agregar al carrito
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="box">
-                    <div><p class="nombres">Helado de Fresas con Chocolate</p> </div>
-                    <div class="img-box">
-                      <img src="images/i2.png" alt="" />
-                    </div>
-                    <p class="precio">$25</p> 
-                    <button
-                      class="agregar-carrito"
-                      data-producto="Producto 2"
-                      data-precio="25"
-                    >
-                      Agregar al carrito
-                    </button>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="box">
-                    <div><p class="nombres">Helado de limon y Menta</p> </div>
-                    <div class="img-box">
-                      <img src="images/i3.png" alt="" />
-                    </div>
-                    <p class="precio">$16</p> 
-                    <button
-                      class="agregar-carrito"
-                      data-producto="Producto 2"
-                      data-precio="16"
-                    >
-                      Agregar al carrito
-                    </button>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="box">
-                    <div><p class="nombres">Helado de Mora Azul</p> </div>
-                    <div class="img-box">
-                      <img src="images/i4.png" alt="" />
-                    </div>
-                    <p class="precio">$10</p> 
-                    <button
-                      class="agregar-carrito"
-                      data-producto="Producto 2"
-                      data-precio="10"
-                    >
-                      Agregar al carrito
-                    </button>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="box">
-                    <div><p class="nombres">Helado de Explocion de Sabores</p> </div>
-                    <div class="img-box">
-                      <img src="images/i5.png" alt="" />
-                    </div>
-                    <p class="precio">$15</p> <!-- Agregamos el elemento <p> para mostrar el precio -->
-                    <button class="agregar-carrito" data-producto="Producto 2" data-precio="15">
-                      Agregar al carrito
-                    </button>
-                  </div>
-                </div>
-                
+        <!-- area de rpoductos -->
+        <section class="contenedor">
+          <!-- Contenedor de elementos -->
+          <div class="contenedor-items">
+              <div class="item">
+                  <span class="titulo-item">Helado de Vainilla y Caramelo</span>
+                  <img src="images/i1.png" alt="" class="img-item">
+                  <span class="precio-item">$5.000</span>
+                  <button class="boton-item">Agregar al Carrito</button>
               </div>
-            </div>
+              <div class="item">
+                  <span class="titulo-item">Helado de Fresas con Chocolate</span>
+                  <img src="images/i2.png" alt="" class="img-item">
+                  <span class="precio-item">$7.000</span>
+                  <button class="boton-item">Agregar al Carrito</button>
+              </div>
+              <div class="item">
+                  <span class="titulo-item">Helado de limon y Menta</span>
+                  <img src="images/i3.png" alt="" class="img-item">
+                  <span class="precio-item">$4.000</span>
+                  <button class="boton-item">Agregar al Carrito</button>
+              </div>
+              <div class="item">
+                  <span class="titulo-item">Helado de Mora Azul</span>
+                  <img src="images/i4.png" alt="" class="img-item">
+                  <span class="precio-item">$8.000</span>
+                  <button class="boton-item">Agregar al Carrito</button>
+              </div>
+              <div class="item">
+                  <span class="titulo-item">Helado de Explocion de Sabores</span>
+                  <img src="images/i5.png" alt="" class="img-item">
+                  <span class="precio-item">$8.000</span>
+                  <button class="boton-item">Agregar al Carrito</button>
+              </div>
           </div>
-        </div>
-      </div>
+          <!-- Carrito de Compras -->
+          <div class="carrito" id="carrito">
+              <div class="header-carrito">
+                  <h2>Tu Carrito</h2>
+              </div>
+  
+              <div class="carrito-items">
+                  <!-- 
+                  <div class="carrito-item">
+                      <img src="img/boxengasse.png" width="80px" alt="">
+                      <div class="carrito-item-detalles">
+                          <span class="carrito-item-titulo">Box Engasse</span>
+                          <div class="selector-cantidad">
+                              <i class="fa-solid fa-minus restar-cantidad"></i>
+                              <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                              <i class="fa-solid fa-plus sumar-cantidad"></i>
+                          </div>
+                          <span class="carrito-item-precio">$15.000,00</span>
+                      </div>
+                     <span class="btn-eliminar">
+                          <i class="fa-solid fa-trash"></i>
+                     </span>
+                  </div>
+                  <div class="carrito-item">
+                      <img src="img/skinglam.png" width="80px" alt="">
+                      <div class="carrito-item-detalles">
+                          <span class="carrito-item-titulo">Skin Glam</span>
+                          <div class="selector-cantidad">
+                              <i class="fa-solid fa-minus restar-cantidad"></i>
+                              <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                              <i class="fa-solid fa-plus sumar-cantidad"></i>
+                          </div>
+                          <span class="carrito-item-precio">$18.000,00</span>
+                      </div>
+                     <button class="btn-eliminar">
+                          <i class="fa-solid fa-trash"></i>
+                     </button>
+                  </div>
+                   -->
+              </div>
+              <div class="carrito-total">
+                  <div class="fila">
+                      <strong>Tu Total</strong>
+                      <span class="carrito-precio-total">
+                          $120.000,00
+                      </span>
+                  </div>
+                  <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+              </div>
+          </div>
+      </section>
     </section>
 
     <!-- product section ends -->
@@ -306,6 +306,6 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
     <!-- End Google Map -->
     <!-- script javascript -->
-    <script src="/js/carrito.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
